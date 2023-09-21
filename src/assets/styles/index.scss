@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "assets/styles/_variables";
+
+body {
+  margin: 0;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #fff;
+  color: var(--color-primary) !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+.transitionCss {
+  @keyframes transition {
+    from {
+      transform: translate(400px, 0);
+    }
+    to {
+      transform: translate(0);
+    }
+  }
+
+  transition: transform 0.3s;
+  animation: transition 0.1s linear;
+}

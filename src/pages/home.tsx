@@ -75,7 +75,7 @@ const HomePage: FC = () => {
             </div>
           </Col>
         ) : (
-          res.map((i, ind) => {
+          res?.map((i, ind) => {
             return (
               <Col lg={6} md={8} sm={24} key={i.pokemon.name}>
                 <PokemonCard index={ind} item={i} />

@@ -6,13 +6,13 @@ import path from "path";
 export default defineConfig({
   server: {
     port: 8080,
-    proxy: {
-      "/api": {
-        target: "https://pokeapi.co/api/v2/",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
+    // proxy: {
+    //   "/api": {
+    //     target: "https://pokeapi.co/api/v2/",
+    //     changeOrigin: true,
+    //     rewrite: (path) => path.replace(/^\/api/, ""),
+    //   },
+    // },
   },
   plugins: [react()],
   resolve: {
